@@ -15,7 +15,6 @@
 #--------------------------------------------------------------------
 
 # CI_ENVIRONMENT = production
-CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
@@ -31,13 +30,16 @@ app.baseURL = 'http://gignoticias2.local'
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
-# database.default.DBPrefix =
-# database.default.port = 3306
+database.default.hostname = localhost
+database.default.database = postgres
+database.default.username = postgres
+database.default.password = root
+database.default.DBDriver = Postgre
+database.default.port = 5432
+database.default.DBPrefix =
+database.default.charset = utf8
+database.default.DBCollat = utf8_general_ci
+database.default.DBDebug = true
 
 # If you use MySQLi as tests, first update the values of Config\Database::$tests.
 # database.tests.hostname = localhost
